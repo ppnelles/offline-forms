@@ -13,11 +13,11 @@ var	gulp = require('gulp'),
     paths = {
         styles: {
             src: "sass/**/*.scss",
-            dest: "dist/assets"
+            dest: "web/assets"
         },
         scripts: {
             src: "js/*.js",
-            dest: "dist/assets"
+            dest: "web/assets"
         }
     };
 
