@@ -1,7 +1,7 @@
 'use strict';
 
 var	gulp = require('gulp'),
-	sass = require('gulp-sass'),
+	sass = require('gulp-sass')(require('sass')),
 	postcss = require("gulp-postcss"),
     concat = require("gulp-concat"),
 	autoprefixer = require("autoprefixer"),
