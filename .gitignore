@@ -1,1 +1,12 @@
 node_modules/
+
+# Hidden system files
+.DS_Store
+.DS_Store?
+.localized
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+[Tt]humbs.db
+*.log
