@@ -15,8 +15,6 @@
 }
 
 html {
-  font-family: sans-serif;
-  line-height: 1.5;
   -moz-text-size-adjust: none;
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
@@ -25,14 +23,8 @@ html {
 
 body {
   margin: 0;
-  font-family: $f-regular;
-  font-weight: 400;
-  font-size: calc((16px) + .25vw);
-  color: $c-text;
   -webkit-font-smoothing: antialiased;
-  background-color: $c-background_body;
-  overflow-x: hidden;
-  
+  overflow-x: hidden;  
 }
 
 figure {
@@ -80,4 +72,40 @@ address {
     height: 100%; 
     z-index: 1;
   }
+}
+
+@keyframes bg-tvnoise {
+   0% {
+       transform: translate3d(0, 8rem, 0);
+   }
+   10% {
+       transform: translate3d(-2rem, 3rem, 0);
+   }
+   20% {
+       transform: translate3d(-7rem, 1rem, 0);
+   }
+   30% {
+       transform: translate3d(8rem, -8rem, 0);
+   }
+   40% {
+       transform: translate3d(-3rem, 6rem, 0);
+   }
+   50% {
+       transform: translate3d(-10rem, -5rem, 0);
+   }
+   60% {
+       transform: translate3d(1rem, 7rem, 0);
+   }
+   70% {
+       transform: translate3d(6rem, -7rem, 0);
+   }
+   80% {
+       transform: translate3d(-10rem, 0rem, 0);
+   }
+   90% {
+       transform: translate3d(5rem, -6rem, 0);
+   }
+   to {
+       transform: translate3d(-8rem, 0, 0);
+   }
 }

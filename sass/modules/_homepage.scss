@@ -1,0 +1,89 @@
+body.page-template-homepage {
+	font-family: $f-regular;
+	font-weight: 400;
+	font-size: calc((16px) + .25vw);
+	line-height: 1.5;
+	background-color: #1a1f21;
+	color: white;
+
+	.noise {
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 1;
+		position: fixed;
+		pointer-events: none;
+		opacity: 0.4;
+
+		&:before {
+		top: -10rem;
+		left: -10rem;
+		width: calc(100% + 20rem);
+		height: calc(100% + 20rem);
+		z-index: 10;
+		content: "";
+		position: absolute;
+		pointer-events: none;
+		background-position: 50%;
+		background-image: url("img/tvnoise.png");
+		pointer-events: none;
+		animation: bg-tvnoise 3s steps(2) infinite;
+	  }
+	}
+
+	main {
+		position: relative;
+		z-index: 2;
+		width: 80%;
+		min-height: 100vh;
+		margin: 0 auto;
+		padding: 2em 0;
+		max-width: 800px;
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		justify-content: center;
+	}
+
+	.site-title {
+		width: 60%;
+		margin: 0 auto;
+		max-width: 350px;
+	}
+
+	.the-forms {
+		text-align: center;
+		margin: 2em 0 0;
+
+		@include mappy-bp(screen-sm) {
+			margin: 4em 0 0;	
+		}
+
+		h3 {
+			color: white;
+		}
+
+		ul {
+			@include reset-list();
+
+			a {
+				color: white;
+				text-decoration: none;
+				display: block;
+				width: 100%;
+				padding: 1.5em 1em;
+				border: 1px solid white;
+				border-radius: 5px;
+				text-transform: uppercase;
+				font-size: 120%;
+
+				&:hover {
+					color: #e9a709;
+					border-color: #e9a709;
+				}
+			}
+		}
+	}
+
+}

@@ -1,0 +1,8 @@
+CACHE MANIFEST
+# revision 3
+/assets/offlineforms.js
+/assets/axios.min.js
+/assets/style.css
+/index.php
+/response_insert.php
+/inc/env.php
