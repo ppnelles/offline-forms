@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Forms - GET IN Agency</title>
-    <meta name="description" content="DESCRIPTION">
+    <meta name="description" content="Data collecting form for your events">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="GET IN">
     <link rel="stylesheet" href="./assets/style.css">
